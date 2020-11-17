@@ -25,7 +25,8 @@ gem 'turbolinks', '~> 5'
 # My added gems
 # simple_form to have nice forms
 gem 'simple_form'
-
+# cloudinary gem for store images
+gem 'cloudinary', '~> 1.16.0'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

@@ -4,6 +4,15 @@
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
+<!-- Images -->
+<% @article.photos.each do |photo| %>
+  <%= cl_image_tag photo.key, height: 300, width: 400, crop: :thumb %>
+<% end %>
+
+<!-- First Image as bg -->
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @article.photos.first.key, height: 300, width: 400, crop: :fill %>')">
+  Cool article
+</div>
 
 <p>
   <strong>Body:</strong>
